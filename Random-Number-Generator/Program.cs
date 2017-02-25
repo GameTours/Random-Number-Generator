@@ -1,4 +1,5 @@
-﻿//The absolute begining of the Random Number Generator
+﻿#region Program
+//The absolute begining of the Random Number Generator
 
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ using System.Threading;
 /// </summary>
 namespace Random_Number_Generator
 
-    //The Class Called Program
+//The Class Called Program
 {
     class Program
     {
@@ -34,7 +35,7 @@ namespace Random_Number_Generator
             //Say what version of the software this is and change the color
             Console.ForegroundColor = ConsoleColor.Cyan;
             Thread.Sleep(500);
-            Console.WriteLine("This Is Version 0.02 Alpha");
+            Console.WriteLine("This Is Version Beta 1");
             //Say what numbers this random number generator generates between.
             //Also Wait 500 millseconds (ms) To Display The Mesage
             //Change To Color To Yellow
@@ -56,17 +57,34 @@ namespace Random_Number_Generator
             Thread.Sleep(500);
             Console.WriteLine("If you find any problems feel free to contact me on YouTube (j.mp/gametoursgaming)!");
             #endregion
-            #region cleaningup
-            //Wait 5 Seconds And Then Change The Color To The Standard White
-            Thread.Sleep(5000);
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("TEST");
-            //Then Wait 2 Seconds And Close The Console Window
-            Thread.Sleep(2000);
-            //Thank The User For Using This App
-            Console.WriteLine("Thank You Very Much For Using This Piece Of Software! -GameTours");
-            //Close The Command Window
-            #endregion
+            #region Random/Main
+            //Create A New Random Object called 'R'
+            Random r = new Random();
+            //Create A While Infinte Loop
+            while (true)
+            {
+                //Anything In These Brackets Will Be Looped Forever Until the program is closed by pressing the X button or pushing ALT+F4
+                //Change The Console Color To Red
+                Console.ForegroundColor = ConsoleColor.Red;
+                //Wait 1 second or 1000 ms and then print a random number
+                Thread.Sleep(1000);
+                //Print The Random Number Between 1 And 100
+                Console.WriteLine(r.Next(1, 100));
+                #endregion
+                #region cleaningup
+                //Wait 5 Seconds And Then Change The Color To The Standard White
+                Thread.Sleep(5000);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("TEST");
+                //Then Wait 2 Seconds And Close The Console Window
+                Thread.Sleep(2000);
+                //Thank The User For Using This App
+                Console.WriteLine("Thank You Very Much For Using This Piece Of Software! -GameTours");
+                //Close The Command Window
+                #endregion
+            }
         }
     }
 }
+
+#endregion
