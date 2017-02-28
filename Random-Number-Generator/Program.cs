@@ -67,9 +67,9 @@ namespace Random_Number_Generator
                 //Change The Console Color To Cyan
                 Console.ForegroundColor = ConsoleColor.DarkCyan;
                 //Wait 1 second or 1000 ms and then print a random number
-                //Thread.Sleep(1000);
+                Thread.Sleep(1000);
                 //Print The Random Number Between 1 And 100
-                Console.WriteLine(r.Next());
+                Console.WriteLine(r.Next(1, 100));
             }
                 #endregion
                
