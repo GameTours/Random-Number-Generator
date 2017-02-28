@@ -20,34 +20,34 @@ namespace Random_Number_Generator
         static void Main(string[] args)
         {
             #region Starup
-            //Change the Color to Gold
-            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            //Change the Color to Blue
+            Console.ForegroundColor = ConsoleColor.Blue;
             //Print The Test String
             Console.WriteLine("Hello World!");
             //Make the app wait Half a second to display a different message
             Thread.Sleep(500);
-            //Change The Console Color To Blue
-            Console.ForegroundColor = ConsoleColor.Blue;
+            //Change The Console Color To Red
+            Console.ForegroundColor = ConsoleColor.Red;
             //Make The Program Wait Half A Second To Display The Message Below
             //Print A Message To Tell The User What App This Is
             Thread.Sleep(500);
             Console.WriteLine("Welcome To A Random Number Generator Made By GameTours");
-            //Say what version of the software this is and change the color
-            Console.ForegroundColor = ConsoleColor.Cyan;
+            //Say what version of the software this is and change the color to Dark Purple (Dark Magenta)
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Thread.Sleep(500);
             Console.WriteLine("This Is Version Beta 1");
             //Say what numbers this random number generator generates between.
             //Also Wait 500 millseconds (ms) To Display The Mesage
-            //Change To Color To Yellow
-            Console.ForegroundColor = ConsoleColor.Yellow;
+            //Change To Color To Pink (Magenta)
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Thread.Sleep(500);
             Console.WriteLine("This Random Number Generator Generates Numbers Between 0 to 100. I will be making differnt versions of this with different numbers");
-            //Change The Console Color To Green
-            Console.ForegroundColor = ConsoleColor.Green;
+            //Change The Console Color To White
+            Console.ForegroundColor = ConsoleColor.White;
             //Advertise My Github LOL!
-            //Change The Color To Purple (Magenta)
+            //Change The Color To Green
             //Wait Another Half A Second Until Saying Another Message
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.Green;
             Thread.Sleep(500);
             Console.WriteLine("Visit Me On GitHub For More Cool Stuff! (https://github.com/GameTours)");
             //Tell The User If They Have Any Problems to contact me on GitHub
@@ -63,28 +63,19 @@ namespace Random_Number_Generator
             //Create A While Infinte Loop
             while (true)
             {
-                //Anything In These Brackets Will Be Looped Forever Until the program is closed by pressing the X button or pushing ALT+F4
-                //Change The Console Color To Red
-                Console.ForegroundColor = ConsoleColor.Red;
+                //Anything In These Brackets Will Be Looped Forever Until the program is closed by pressing the X button at the top right or pushing ALT+F4
+                //Change The Console Color To Cyan
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 //Wait 1 second or 1000 ms and then print a random number
-                Thread.Sleep(1000);
+                //Thread.Sleep(1000);
                 //Print The Random Number Between 1 And 100
-                Console.WriteLine(r.Next(1, 100));
+                Console.WriteLine(r.Next());
+            }
                 #endregion
-                #region cleaningup
-                //Wait 5 Seconds And Then Change The Color To The Standard White
-                Thread.Sleep(5000);
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("TEST");
-                //Then Wait 2 Seconds And Close The Console Window
-                Thread.Sleep(2000);
-                //Thank The User For Using This App
-                Console.WriteLine("Thank You Very Much For Using This Piece Of Software! -GameTours");
-                //Close The Command Window
-                #endregion
+               
             }
         }
     }
-}
+
 
 #endregion
