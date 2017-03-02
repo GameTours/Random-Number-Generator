@@ -35,7 +35,7 @@ namespace Random_Number_Generator
             //Say what version of the software this is and change the color to Dark Purple (Dark Magenta)
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Thread.Sleep(500);
-            Console.WriteLine("This Is Version Beta 1");
+            Console.WriteLine("This Is Version Beta 3");
             //Say what numbers this random number generator generates between.
             //Also Wait 500 millseconds (ms) To Display The Mesage
             //Change To Color To Pink (Magenta)
